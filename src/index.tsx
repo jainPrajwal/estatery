@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { PropertyProvider } from './contexts/property-context';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { FavouritesProvider } from './contexts/fav-context';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -12,7 +13,9 @@ root.render(
   <React.StrictMode>
     <Router>
       <PropertyProvider>
-        <App />
+        <FavouritesProvider>
+          <App />
+        </FavouritesProvider>
       </PropertyProvider>
     </Router>
   </React.StrictMode>

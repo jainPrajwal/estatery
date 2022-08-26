@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Palm Harbour",
+    "isPopular": true,
+    "rent": {
+      "amount": "340",
+      "per": "month"
+    },
+    "address": "2699 Green Valley, Highland lake,FL",
+    "description": {
+      "beds": 3,
+      "bathrooms": 2
+    },
+    "image": "https://media.istockphoto.com/photos/row-houses-picture-id157376658?k=20&m=157376658&s=612x612&w=0&h=hwAGvP0-cqX2K_VmfrKk5Fe7I6IicQIWJr-M3fELbgA=",
+
+    "dimensions": {
+      "length": 5,
+      "breadth": 7
+    }
+  },
+  {
+    "name": "Beverley Springfield",
+    "isPopular": true,
+    "rent": {
+      "amount": "340",
+      "per": "month"
+    },
+    "address": "2699 Green Valley, Highland lake,FL",
+    "description": {
+      "beds": 3,
+      "bathrooms": 2
+    },
+    "image": "https://i.pinimg.com/736x/d1/48/2e/d1482e874f2b7d269088a7c20af3d575.jpg",
+    "dimensions": {
+      "length": 5,
+      "breadth": 7
+    }
+  },
+  {
+    "name": "Faulkner Ave",
+    "isPopular": true,
+    "rent": {
+      "amount": "340",
+      "per": "month"
+    },
+    "address": "2699 Green Valley, Highland lake,FL",
+    "description": {
+      "beds": 3,
+      "bathrooms": 2
+    },
+    "image": "https://v-interior.co.in/wp-content/uploads/2021/01/55-2.jpg",
+    "dimensions": {
+      "length": 5,
+      "breadth": 7
+    }
+  },
+  {
+    "name": "Palm Harbour",
+    "isPopular": true,
+    "rent": {
+      "amount": "340",
+      "per": "month"
+    },
+    "address": "2699 Green Valley, Highland lake,FL",
+    "description": {
+      "beds": 3,
+      "bathrooms": 2
+    },
+    "image": "https://www.forbes.com/advisor/wp-content/uploads/2021/08/download-23.jpg",
+    "dimensions": {
+      "length": 5,
+      "breadth": 7
+    }
+  }
+]

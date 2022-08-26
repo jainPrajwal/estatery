@@ -4,7 +4,8 @@ import { Property } from "../constants/property.types";
 
 const initialState = {
     properties: Array<Property>,
-
+    filterBy: ``,
+    searchBy: ``
 }
 
 const PropertyContext = createContext<{
