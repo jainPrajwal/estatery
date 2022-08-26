@@ -1,0 +1,22 @@
+.filters {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-block: 2rem;
+    gap:20px;
+}
+
+.filter {
+    flex-grow: 1;
+    border-right: 1px solid var(--es-border-gray);
+    
+}
+
+.filter:nth-last-child(1) {
+    border-right: 1px solid transparent;
+}
+
+.btnSearch {
+    padding: 1.4rem;
+}

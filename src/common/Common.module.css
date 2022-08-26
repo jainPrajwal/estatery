@@ -1,0 +1,12 @@
+.dFlex {
+    display: flex;
+}
+
+.aiCenter {
+    align-items: center;
+}
+
+.jcCenter {
+    justify-content: center;
+}
+

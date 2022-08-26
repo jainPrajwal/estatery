@@ -1,0 +1,15 @@
+.nav {
+    background-color: var(--es-primary-light-100);
+}
+
+.wrapperLogo {
+    max-width: 60px;
+}
+
+.wrapperNav {
+    width: 70%;
+}
+
+.listItem {
+    color: var(--es-primary);
+}
