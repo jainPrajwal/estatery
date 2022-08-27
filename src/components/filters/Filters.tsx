@@ -2,7 +2,7 @@ import { default as filterStyles } from "./Filters.module.css";
 import { IoMdCalendar } from "react-icons/io";
 import { IoChevronDown } from "react-icons/io5"
 import { useProperty } from "../../hooks/useProperty";
-import { FILTER_BY_PROPERTY_TYPE } from "../../constants/action.types";
+import { FILTER_BY_PROPERTY_PRICE, FILTER_BY_PROPERTY_TYPE } from "../../constants/action.types";
 import { useState } from "react";
 export const Filters = () => {
     const { propertyDispatch } = useProperty();
@@ -43,20 +43,48 @@ export const Filters = () => {
                 </span>
             </div>
         </div>
-        <div className={`${filter} d-flex jc-center f-direction-col px-md`}>
-            <div className="text-gray">Price</div>
-            <div className="text-bold text-larger d-flex ai-center">
-                <label htmlFor="move-in-date">
-                    $500 - $2,500
-                </label>
-                <span role={`img`} className={`img-icon-wrapper ml-auto d-flex ai-center jc-center`}
-                    style={{ width: `28px`, height: `28px` }}
-                >
-                    <IoChevronDown
+        <div className={`${filter} d-flex jc-center f-direction-col px-md pos-rel`}>
+            <div className="text-gray" style={{ paddingLeft: `0.5rem` }}>Price</div>
+            <div className={`text-bold text-larger d-flex ai-center  ${dropdownWrapper}`}>
 
-                    />
-                </span>
+                <select name="types" id="types"
+                    className={`${dropdown}`}
+                    onChange={(e) => {
+                        setLocalFilters(prevState => {
+                            return {
+                                ...prevState,
+                                filterBy: {
+                                    ...prevState.filterBy,
+                                    selectedPriceRange: e.target.value
+                                }
+                            }
+                        })
+                    }}
+
+                >
+                    <option value={`null`}
+                        className={`${dropdownOption}`}
+                    >Select an option</option>
+                    <option
+                        className={`${dropdownOption}`}
+                        value="<500">Less than $500</option>
+                    <option
+                        className={`${dropdownOption}`}
+                        value="500-2500">$500 - $2,500</option>
+                    <option
+                        className={`${dropdownOption}`}
+                        value=">2500">Greater than $2,500</option>
+
+                </select>
+
             </div>
+            <span role={`img`} className={`img-icon-wrapper ml-auto d-flex ai-center jc-center ${dropdownArrow}`}
+                style={{ width: `28px`, height: `28px` }}
+            >
+                <IoChevronDown
+
+                />
+            </span>
         </div>
         <div className={`${filter} d-flex jc-center f-direction-col px-md pos-rel`}>
             <div className="text-gray" style={{ paddingLeft: `0.5rem` }}>Property Type</div>
@@ -79,7 +107,7 @@ export const Filters = () => {
                 >
                     <option value={`null`}
                         className={`${dropdownOption}`}
-                    >Please select an option</option>
+                    >Select an option</option>
                     <option
                         className={`${dropdownOption}`}
                         value="houses">Houses</option>
@@ -113,6 +141,15 @@ export const Filters = () => {
                             }
                         })
 
+                    }
+console.log(`localFilters.filterBy.selectedPriceRange `, localFilters.filterBy.selectedPriceRange)
+                    if(localFilters.filterBy.selectedPriceRange) {
+                        propertyDispatch({
+                            type: FILTER_BY_PROPERTY_PRICE,
+                            payload: {
+                                propertyPrice: localFilters.filterBy.selectedPriceRange === `null` ? null : localFilters.filterBy.selectedPriceRange
+                            }
+                        })
                     }
                 }}
 

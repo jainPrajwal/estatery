@@ -24,7 +24,7 @@
     "name": "Beverley Springfield",
     "isPopular": true,
     "rent": {
-      "amount": "340",
+      "amount": "540",
       "per": "month"
     },
     "address": "2699 Green Valley, Highland lake,FL",
@@ -44,7 +44,7 @@
     "name": "Faulkner Ave",
     "isPopular": false,
     "rent": {
-      "amount": "340",
+      "amount": "30000",
       "per": "month"
     },
     "address": "2699 Green Valley, Highland lake,FL",
@@ -64,7 +64,7 @@
     "name": "Palm Harbour",
     "isPopular": false,
     "rent": {
-      "amount": "340",
+      "amount": "140",
       "per": "month"
     },
     "address": "2699 Green Valley, Highland lake,FL",

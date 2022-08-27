@@ -5,25 +5,48 @@ import "./PropertyListing.css";
 import { useProperty } from "../../hooks/useProperty";
 export const PropertyListing = () => {
     const { propertyState } = useProperty();
-    const filteredProperties = (Properties as Array<Property>).filter(property => {
-        if (propertyState.filterBy.selectedPropertyType) {
+    const filteredPropertiesAccordingToType = (Properties as Array<Property>).filter(property => {
 
-            if (property.type === propertyState.filterBy.selectedPropertyType) {
-                return true;
+        return propertyState.filterBy.selectedPropertyType ? property.type === propertyState.filterBy.selectedPropertyType : true
+    });
+
+    const filteredPropertiesAccordingToPrice = filteredPropertiesAccordingToType.filter(property => {
+        const price = +property.rent.amount;
+        const selectedPrice = propertyState.filterBy.selectedPriceRange;
+        console.log(`selectedPrice `, selectedPrice)
+        if (selectedPrice) {
+            if (selectedPrice.includes(`>`)) {
+               
+                if (price >= +selectedPrice.slice(1)) {
+                    return true;
+                } return false;
+
+            } else if (selectedPrice.includes(`<`)) {
+               console.log( price)
+                if (price < +selectedPrice.slice(1)) {
+                    return true;
+                } return false;
+
             } else {
-                return false;
-            }
-        } else {
 
-            return true;
-        }
+                const [greaterThan, lessThan] = selectedPrice.split(`-`);
+
+                if (price >= +greaterThan && price < +lessThan) {
+                    return true;
+                }
+                return false;
+
+            }
+        } 
+        return true;
+
     })
 
 
 
     return <div className="m-0-auto">
         <div className="container-card"> {
-            filteredProperties.map(property => {
+            filteredPropertiesAccordingToPrice.map(property => {
                 return <Card property={property} key={property.id} />
             })
         }</div>
