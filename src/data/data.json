@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "name": "Palm Harbour",
     "isPopular": true,
     "rent": {
@@ -12,13 +13,14 @@
       "bathrooms": 2
     },
     "image": "https://i.pinimg.com/originals/7c/b2/c2/7cb2c2b81a7470bee554a9d2344d9c81.jpg",
-
+    "type": "houses",
     "dimensions": {
       "length": 5,
       "breadth": 7
     }
   },
   {
+    "id": "2",
     "name": "Beverley Springfield",
     "isPopular": true,
     "rent": {
@@ -30,6 +32,7 @@
       "beds": 3,
       "bathrooms": 2
     },
+    "type": "condos",
     "image": "http://cdn.home-designing.com/wp-content/uploads/2020/04/modern-home-on-the-coast.jpg",
     "dimensions": {
       "length": 5,
@@ -37,6 +40,7 @@
     }
   },
   {
+    "id": "3",
     "name": "Faulkner Ave",
     "isPopular": false,
     "rent": {
@@ -48,6 +52,7 @@
       "beds": 3,
       "bathrooms": 2
     },
+    "type": "houses",
     "image": "https://wallpaperaccess.com/full/1218437.jpg",
     "dimensions": {
       "length": 5,
@@ -55,6 +60,7 @@
     }
   },
   {
+    "id": "4",
     "name": "Palm Harbour",
     "isPopular": false,
     "rent": {
@@ -66,6 +72,7 @@
       "beds": 3,
       "bathrooms": 2
     },
+    "type": "townhomes",
     "image": "https://i.pinimg.com/originals/0d/c8/ce/0dc8ce17308663dc5c9b8b4b2627dd78.jpg",
     "dimensions": {
       "length": 5,

@@ -51,10 +51,10 @@ export const Navbar = () => {
                         <li className={` px-md py-sm ${listItem}`}>
                             <NavLink
 
-                                to={`/resources`}
+                                to={`/favourites`}
                                 className={({ isActive }) => {
                                     return `link px-md py-sm ${isActive ? `link-active` : ``} `
-                                }}>Resources</NavLink>
+                                }}>Favourites</NavLink>
                         </li>
                     </ul>
                 </div>

@@ -6,7 +6,7 @@ export const PropertyListing = () => {
     return <div className="m-0-auto">
         <div className="container-card"> {
             (Properties as Array<Property>).map(property => {
-                return <Card property={property} />
+                return <Card property={property} key={property.id} />
             })
         }</div>
     </div>

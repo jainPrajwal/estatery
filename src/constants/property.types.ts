@@ -1,4 +1,5 @@
 export type Property = {
+  id: string;
   name: string;
   image: string;
   isPopular: boolean;
@@ -15,6 +16,5 @@ export type Property = {
     length: number;
     breadth: number;
   };
+  type: `houses` | `condos` | `townhomes`;
 };
-
-

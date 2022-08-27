@@ -3,7 +3,7 @@ import { IoMdCalendar } from "react-icons/io";
 import { IoChevronDown } from "react-icons/io5"
 export const Filters = () => {
     const { filters, filter, btnSearch } = filterStyles;
-    return <div className={`${filters} d-flex ai-center f-wrap`}>
+    return <div className={`${filters} d-flex ai-center f-wrap pos-rel`}>
         <div className={`${filter} d-flex jc-center f-direction-col px-md`}>
             <div className="text-gray">Location</div>
             <div className="text-bold text-larger">New York, USA</div>

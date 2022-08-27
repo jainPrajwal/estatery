@@ -9,6 +9,7 @@
   --es-primary-light-100: #FAF9FE;
   --es-font-color-dark: #03021D;
   --es-font-color-gray: #C5C4CA;
+  --es-exotic-red: #ef4444;
 }
 
 * {
@@ -198,6 +199,11 @@ a {
 .text-center {
   text-align: center;
 }
+
+.text-caps {
+  text-transform: capitalize;
+}
+
 .f-wrap {
   flex-wrap: wrap;
 }
@@ -209,8 +215,17 @@ a {
 .h-100 {
   height: 100%;
 }
+
 .pos-rel {
   position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 720px) {
