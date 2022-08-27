@@ -1,0 +1,18 @@
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 380px));
+    gap: 1rem;
+    margin: 1rem auto;
+    place-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 520px) {
+    .container-card {
+        grid-template-columns: 1fr;
+        width: 100%;
+       
+        
+    }
+}

@@ -1,11 +1,11 @@
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { default as NavbarStyles } from "./Navbar.module.css";
 
 export const Navbar = () => {
-    const { navbar, wrapperLogo, wrapperNav, listItem, nav } = NavbarStyles;
-    return <nav className={`p-md ${nav}`}>
+    const { navbar, wrapperLogo, wrapperNav, listItem, nav, navList, navListWrapper } = NavbarStyles;
+    return <nav className={`${nav}`}>
         <div className={`d-flex ai-center ${navbar}`}>
-            <div className={`d-flex jc-space-between ai-center  ${wrapperNav}`}>
+            <div className={`d-flex  ai-center  ${wrapperNav}`}>
                 <div className="d-flex ai-center">
                     <div className={`${wrapperLogo}`}>
                         <img src="https://res.cloudinary.com/dmk11fqw8/image/upload/v1661335403/real-estate_ewpkh9.png" alt="Estatery" />
@@ -16,8 +16,8 @@ export const Navbar = () => {
                     </div>
                 </div>
 
-                <div>
-                    <ul className="d-flex">
+                <div className={`${navListWrapper}`}>
+                    <ul className={`d-flex ${navList}`}>
                         <li className={` px-md py-sm ${listItem}`}>
 
                             <NavLink
@@ -59,7 +59,6 @@ export const Navbar = () => {
                     </ul>
                 </div>
             </div>
-
 
             <div className="ml-auto d-flex gap-10">
                 <button className="btn btn-secondary">Login</button>

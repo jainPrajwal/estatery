@@ -3,15 +3,15 @@ import { IoMdCalendar } from "react-icons/io";
 import { IoChevronDown } from "react-icons/io5"
 export const Filters = () => {
     const { filters, filter, btnSearch } = filterStyles;
-    return <div className={`${filters} d-flex ai-center`}>
+    return <div className={`${filters} d-flex ai-center f-wrap`}>
         <div className={`${filter} d-flex jc-center f-direction-col px-md`}>
             <div className="text-gray">Location</div>
-            <div className="text-bold text-large">New York, USA</div>
+            <div className="text-bold text-larger">New York, USA</div>
         </div>
         <div className={`${filter} d-flex jc-center f-direction-col px-md`}>
             <div className="text-gray">When</div>
 
-            <div className="text-bold text-large d-flex ai-center">
+            <div className="text-bold text-larger d-flex ai-center">
                 <label htmlFor="move-in-date">
                     Select Move-in Date
                 </label>
@@ -22,7 +22,7 @@ export const Filters = () => {
         </div>
         <div className={`${filter} d-flex jc-center f-direction-col px-md`}>
             <div className="text-gray">Price</div>
-            <div className="text-bold text-large d-flex ai-center">
+            <div className="text-bold text-larger d-flex ai-center">
                 <label htmlFor="move-in-date">
                     $500 - $2,500
                 </label>
@@ -37,7 +37,7 @@ export const Filters = () => {
         </div>
         <div className={`${filter} d-flex jc-center f-direction-col px-md`}>
             <div className="text-gray">Property Type</div>
-            <div className="text-bold text-large d-flex ai-center">
+            <div className="text-bold text-larger d-flex ai-center">
                 <label htmlFor="move-in-date">
                     Houses
                 </label>
@@ -51,7 +51,7 @@ export const Filters = () => {
             </div>
         </div>
         <div className={`${filter} d-flex jc-center f-direction-col px-md`}>
-            <button className={`btn btn-primary ${btnSearch}`} >Search</button>
+            <button className={`btn btn-primary ${btnSearch} text-large`} >Search</button>
         </div>
 
     </div>

@@ -20,3 +20,9 @@
 .btnSearch {
     padding: 1.4rem;
 }
+
+@media screen and (max-width: 720px) {
+    .btnSearch {
+        padding: 1rem;
+    }
+}

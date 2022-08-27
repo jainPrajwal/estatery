@@ -4,6 +4,7 @@
   --es-primary-disabled: #c4b5fb;
   --es-font-color-light: #f1f5f9;
   --es-border-gray: #e5e7eb;
+  --es-font-color-gray-200: #9ca3af;
   --es-primary-light-200: #F8F7FD;
   --es-primary-light-100: #FAF9FE;
   --es-font-color-dark: #03021D;
@@ -19,7 +20,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--es-font-color-dark);
-
+  margin-right: calc(-1 * (100vw - 100%));
   overflow-x: hidden;
 }
 
@@ -38,6 +39,9 @@ a {
   text-decoration: none;
 }
 
+.link {
+  border-radius: 4px;
+}
 
 .link:hover,
 .link-active {
@@ -79,6 +83,10 @@ a {
 
 .py-sm {
   padding-block: 0.5rem;
+}
+
+.py-md {
+  padding-block: 1rem;
 }
 
 .px-md {
@@ -161,4 +169,53 @@ a {
 
 .text-large {
   font-size: 1.2rem;
+}
+
+.text-larger {
+  font-size: 1.5rem;
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+.text-smaller {
+  font-size: 0.7rem;
+}
+
+.text-primary {
+  color: var(--es-primary);
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-dark-gray {
+  color: var(--es-font-color-gray-200);
+}
+
+.text-center {
+  text-align: center;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+.h-100 {
+  height: 100%;
+}
+.pos-rel {
+  position: relative;
+}
+
+@media screen and (max-width: 720px) {
+  .btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+  }
 }

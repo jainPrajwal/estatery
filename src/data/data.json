@@ -11,7 +11,7 @@
       "beds": 3,
       "bathrooms": 2
     },
-    "image": "https://media.istockphoto.com/photos/row-houses-picture-id157376658?k=20&m=157376658&s=612x612&w=0&h=hwAGvP0-cqX2K_VmfrKk5Fe7I6IicQIWJr-M3fELbgA=",
+    "image": "https://i.pinimg.com/originals/7c/b2/c2/7cb2c2b81a7470bee554a9d2344d9c81.jpg",
 
     "dimensions": {
       "length": 5,
@@ -30,7 +30,7 @@
       "beds": 3,
       "bathrooms": 2
     },
-    "image": "https://i.pinimg.com/736x/d1/48/2e/d1482e874f2b7d269088a7c20af3d575.jpg",
+    "image": "http://cdn.home-designing.com/wp-content/uploads/2020/04/modern-home-on-the-coast.jpg",
     "dimensions": {
       "length": 5,
       "breadth": 7
@@ -38,7 +38,7 @@
   },
   {
     "name": "Faulkner Ave",
-    "isPopular": true,
+    "isPopular": false,
     "rent": {
       "amount": "340",
       "per": "month"
@@ -48,7 +48,7 @@
       "beds": 3,
       "bathrooms": 2
     },
-    "image": "https://v-interior.co.in/wp-content/uploads/2021/01/55-2.jpg",
+    "image": "https://wallpaperaccess.com/full/1218437.jpg",
     "dimensions": {
       "length": 5,
       "breadth": 7
@@ -56,7 +56,7 @@
   },
   {
     "name": "Palm Harbour",
-    "isPopular": true,
+    "isPopular": false,
     "rent": {
       "amount": "340",
       "per": "month"
@@ -66,7 +66,7 @@
       "beds": 3,
       "bathrooms": 2
     },
-    "image": "https://www.forbes.com/advisor/wp-content/uploads/2021/08/download-23.jpg",
+    "image": "https://i.pinimg.com/originals/0d/c8/ce/0dc8ce17308663dc5c9b8b4b2627dd78.jpg",
     "dimensions": {
       "length": 5,
       "breadth": 7

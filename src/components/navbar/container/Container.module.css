@@ -1,8 +1,14 @@
 .container {
-    max-width: 1380px;
+    max-width: 1560px;
     margin: 0 auto;
     padding: 2rem;
     background-color: var(--es-primary-light-200);
-    height: 100vh;
-    margin-right: calc(-1 * (100vw - 100%));
+    min-height: 100vh;
+   
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        padding: 1rem;
+    }
 }

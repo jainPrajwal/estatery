@@ -1,0 +1,23 @@
+.ribbon-pop {
+    background-color: var(--es-primary);
+    left: -10px;
+    padding: 10px 40px 10px 20px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    bottom: -20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.ribbon-pop:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid var(--es-primary);
+    border-left: 15px solid transparent;
+}

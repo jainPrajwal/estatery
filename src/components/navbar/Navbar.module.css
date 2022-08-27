@@ -1,15 +1,36 @@
 .nav {
     background-color: var(--es-primary-light-100);
+   padding: 1rem;
 }
-
+.navbar {
+    margin-inline: 2rem;
+}
 .wrapperLogo {
-    max-width: 60px;
+    width: 40px;
 }
 
 .wrapperNav {
-    width: 70%;
+    max-width: 70%;
+    gap: 4rem;
 }
 
 .listItem {
     color: var(--es-primary);
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 920px) {
+    .navListWrapper {
+        display: none;
+    }
+    .navbar {
+        margin: 0;
+    }
+    .nav {
+        padding: 0.5rem;
+    }
+    .wrapperNav {
+        gap: 1rem;
+    }
+
 }
