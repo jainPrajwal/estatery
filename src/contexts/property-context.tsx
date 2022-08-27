@@ -1,15 +1,22 @@
 import React, { createContext, useReducer } from "react";
 import { ACTION } from "../constants/action.types";
-import { Property } from "../constants/property.types";
+import {  ProprtiesInitialState } from "../constants/property.types";
+import { propertyReducer } from "../reducers/propertyReducer";
 
-const initialState = {
-    properties: Array<Property>,
-    filterBy: ``,
-    searchBy: ``
+
+const initialState: ProprtiesInitialState = {
+    properties: [],
+    filterBy: {
+        selectedDate: null,
+        selectedLocation: null,
+        selectedPriceRange: null,
+        selectedPropertyType: null
+    },
+    searchBy: null
 }
 
 const PropertyContext = createContext<{
-    propertyState: typeof initialState,
+    propertyState: ProprtiesInitialState,
     propertyDispatch: React.Dispatch<ACTION>
 }>({
     propertyState: initialState,
@@ -18,9 +25,7 @@ const PropertyContext = createContext<{
 
 
 
-const propertyReducer = (state: typeof initialState, action: ACTION) => {
-    return initialState;
-}
+
 const PropertyProvider = ({ children }: { children: React.ReactNode }) => {
     const [propertyState, propertyDispatch] = useReducer(propertyReducer, initialState);
     return <PropertyContext.Provider value={{ propertyState, propertyDispatch }}>

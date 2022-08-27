@@ -4,13 +4,13 @@
     border-radius: 8px;
     padding: 1rem;
     margin-block: 2rem;
-    gap:20px;
+    gap: 20px;
 }
 
 .filter {
     flex-grow: 1;
     border-right: 1px solid var(--es-border-gray);
-    
+
 }
 
 .filter:nth-last-child(1) {
@@ -19,6 +19,47 @@
 
 .btnSearch {
     padding: 1.4rem;
+}
+
+.dropdown {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1rem 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: 1px solid transparent;
+}
+
+
+.dropdownWrapper:focus-within {
+    outline: 1px solid var(--es-border-gray);
+}
+
+.dropdownWrapper {
+    min-width: 100%;
+    display: flex;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.dropdownOption {
+  background-color: var( --es-primary-hover);
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.dropdownArrow {
+    position: absolute;
+    top: 64%;
+    right: 16px;
+    transform: translateY(-50%);
+
 }
 
 @media screen and (max-width: 720px) {

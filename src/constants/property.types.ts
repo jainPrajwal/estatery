@@ -18,3 +18,15 @@ export type Property = {
   };
   type: `houses` | `condos` | `townhomes`;
 };
+
+export type ProprtiesInitialState = {
+  properties: Array<Property>,
+  filterBy: {
+      selectedLocation: string | null,
+      selectedDate: string | null,
+      selectedPropertyType: string | null;
+      selectedPriceRange: string | null;
+
+  },
+  searchBy: string | null;
+}
