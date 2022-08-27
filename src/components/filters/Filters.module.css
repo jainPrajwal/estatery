@@ -2,9 +2,9 @@
     display: flex;
     background-color: #fff;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-block: 2rem;
-    gap: 20px;
+    gap: 10px;
 }
 
 .filter {
@@ -59,11 +59,22 @@
     top: 64%;
     right: 16px;
     transform: translateY(-50%);
+    
 
 }
 
+
+@media screen and (max-width: 1320px) {
+    .filters {
+        flex-wrap: wrap;
+    }
+
+   
+}
 @media screen and (max-width: 720px) {
     .btnSearch {
         padding: 1rem;
     }
+
+   
 }

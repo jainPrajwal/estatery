@@ -26,21 +26,21 @@ export const Filters = () => {
 
 
     const { filters, filter, btnSearch, dropdown, dropdownWrapper, dropdownOption, dropdownArrow } = filterStyles;
-    return <div className={`${filters} d-flex ai-center f-wrap pos-rel`}>
-        <div className={`${filter} d-flex jc-center f-direction-col px-md`}>
+    return <div className={`${filters} d-flex ai-center  pos-rel`}>
+        <div className={`${filter} d-flex jc-center f-direction-col px-sm`}>
             <div className="text-gray">Location</div>
             <div className="text-bold text-larger">New York, USA</div>
         </div>
-        <div className={`${filter} d-flex jc-center f-direction-col px-md`}>
+        <div className={`${filter} d-flex jc-center f-direction-col px-sm`}>
             <div className="text-gray">When</div>
 
             <div className="text-bold text-larger d-flex ai-center">
                 <label htmlFor="move-in-date">
                     Select Move-in Date
                 </label>
-                <span role={`img`} className={`img-icon-wrapper ml-auto`} style={{ width: `32px`, height: `32px` }}>
+                {/* <span role={`img`} className={`img-icon-wrapper ml-auto`} style={{ width: `32px`, height: `32px` }}>
                     <IoMdCalendar />
-                </span>
+                </span> */}
             </div>
         </div>
         <div className={`${filter} d-flex jc-center f-direction-col px-md pos-rel`}>
@@ -129,7 +129,7 @@ export const Filters = () => {
                 />
             </span>
         </div>
-        <div className={`${filter} d-flex jc-center f-direction-col px-md`}>
+        <div className={`${filter} d-flex jc-center f-direction-col px-sm`}>
             <button className={`btn btn-primary ${btnSearch} text-large`}
                 onClick={() => {
                     if (localFilters.filterBy.selectedPropertyType) {
