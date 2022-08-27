@@ -16,13 +16,13 @@ export const PropertyListing = () => {
         console.log(`selectedPrice `, selectedPrice)
         if (selectedPrice) {
             if (selectedPrice.includes(`>`)) {
-               
+
                 if (price >= +selectedPrice.slice(1)) {
                     return true;
                 } return false;
 
             } else if (selectedPrice.includes(`<`)) {
-               console.log( price)
+                console.log(price)
                 if (price < +selectedPrice.slice(1)) {
                     return true;
                 } return false;
@@ -37,7 +37,7 @@ export const PropertyListing = () => {
                 return false;
 
             }
-        } 
+        }
         return true;
 
     })
@@ -46,9 +46,9 @@ export const PropertyListing = () => {
 
     return <div className="m-0-auto">
         <div className="container-card"> {
-            filteredPropertiesAccordingToPrice.map(property => {
+            filteredPropertiesAccordingToPrice.length > 0 ? filteredPropertiesAccordingToPrice.map(property => {
                 return <Card property={property} key={property.id} />
-            })
+            }) : <>No results found..!</>
         }</div>
     </div>
 }
